@@ -1,5 +1,5 @@
 {% set name = "mkdocs-autorefs" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-autorefs-{{ version }}.tar.gz
-  sha256: b8156d653ed91356e71675ce1fa1186d2b2c2085050012522895c9aa98fca3e5
+  sha256: 2f89556eb2107d72e3aff41b04dcaaf1125d407a33b8027fbc982137d248d37d
 
 build:
   number: 0
