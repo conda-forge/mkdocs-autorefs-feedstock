@@ -1,5 +1,5 @@
 {% set name = "mkdocs-autorefs" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocs-autorefs-{{ version }}.tar.gz
-  sha256: 12baad29359f468b44d980ed35b713715409097a1d8e3d0ef90962db95205eda
+  sha256: c17f77db766409fbd493dc75668e1e9e0221236b1d18194b961d8b1a7d74b980
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
     - poetry
     - python >=3.6,<4.0
   run:
-    - markdown >=3.3,<4.0
-    - mkdocs >=1.1,<2.0
+    - markdown >=3.3
+    - mkdocs >=1.1
     - python >=3.6,<4.0
 
 test:
