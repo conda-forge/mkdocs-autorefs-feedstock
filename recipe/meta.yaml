@@ -28,10 +28,14 @@ requirements:
 test:
   imports:
     - mkdocs_autorefs
+  source_files:
+    - tests/
   commands:
     - pip check
+    - pytest tests/
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/mkdocstrings/autorefs
