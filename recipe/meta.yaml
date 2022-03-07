@@ -32,7 +32,7 @@ test:
     - tests/
   commands:
     - pip check
-    - pytest tests/
+    - pytest
   requires:
     - pip
     - pytest
