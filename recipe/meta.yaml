@@ -11,7 +11,7 @@ source:
   sha256: 70748a7bd025f9ecd6d6feeba8ba63f8e891a1af55f48e366d6d6e78493aba84
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -30,8 +30,12 @@ test:
     - mkdocs_autorefs
   commands:
     - pip check
+    - pytest
   requires:
     - pip
+    - pytest
+  source_files:
+    - tests
 
 about:
   home: https://github.com/mkdocstrings/autorefs
