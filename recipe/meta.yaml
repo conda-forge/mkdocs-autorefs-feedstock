@@ -1,5 +1,5 @@
 {% set name = "mkdocs-autorefs" %}
-{% set version = "0.5.0" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9a5054a94c08d28855cfab967ada10ed5be76e2bfad642302a610b252c3274c0
+  sha256: 1b20db41cade632b07b7a73dee818977b52e869c9deb438f6f20e2896ff01859
 
 build:
   number: 0
@@ -24,6 +24,8 @@ requirements:
     - python >=3.8,<4.0
     - mkdocs >=1.1
     - markdown >=3.3
+    # - markupsafe >=2.0.1
+    # - Markdown >=3.3
 
 test:
   imports:
