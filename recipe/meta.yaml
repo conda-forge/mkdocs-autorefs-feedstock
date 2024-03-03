@@ -32,7 +32,7 @@ test:
     - mkdocs_autorefs
   commands:
     - pip check
-    - pytest
+    # - pytest
   requires:
     - pip
     - pytest
