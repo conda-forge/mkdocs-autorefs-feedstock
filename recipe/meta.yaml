@@ -11,7 +11,7 @@ source:
   sha256: a86b93abff653521bda71cf3fc5596342b7a23982093915cb74273f67522190f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,9 +26,6 @@ requirements:
     - markdown >=3.3
     - markupsafe >=2.0.1
     - pymdown-extensions
-    # - Markdown >=3.3
-    # - Markdown >=3.3
-    # - Markdown >=3.3
 
 test:
   imports:
